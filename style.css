@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {scroll-behavior: smooth;}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Geologica', sans-serif;
+    height: 10vh;
+}
+
+@media(max-width: 1440px) {
+    .conteudo {
+        font-size: 50px;
+    }
+    #prices_title {
+        font-size: 50px;
+    }
+    .container {
+        scale: 0.7;
+    }
+}
+
+@media(max-width: 768px) {
+    .card {
+        scale: 0.7;
+    }
+}
+
+@media(max-width: 425px) {
+    .card {
+        scale: 0.;
+        display: flex;       
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo {
+        font-size: 30px;
+        position: absolute;
+        margin-bottom: 300px;
+    }
+
+    #prices_title {
+        font-size: 30px;
+        position: absolute;
+        margin-bottom: 1300px;
+        margin-left: 160px;
+    }
+
+    header {
+        scale: 0.6;
+    }
+}
+
+@media(max-width: 375px) {
+    #prices_title {
+        font-size: 30px;
+        position: absolute;
+        padding-right: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_two {
+        display: flex;
+
+    }
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+
+
+li {
+    margin: 20px;
+    cursor: pointer;
+}
+
+li:hover {
+    transition-duration: 0.5s;
+    scale: 1.1;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    font-family: 'Geologica', sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.main_one {
+    font-family: 'Geologica', sans-serif;
+    font-size: 70px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#prices_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.container {
+    height: 450px;
+    width: 300px;
+    background: rgb(255, 255, 255);
+    /* border: 1px solid rgb(70, 70, 70); */
+    box-shadow: 0px 1px 2px 2px black;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 5px 1px 3px rgb(128, 128, 128); */
+    /* font-family: 'Bagel Fat One', cursive; */
+    font-family: 'Geologica', sans-serif;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container:hover {
+    transition-duration: 0.5s;
+    scale: 1.1;
+}
+
+li {
+    list-style-type: none;
+}
+
+.modelo {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.plano_name {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_two {
+    font-family: 'Geologica', sans-serif;
+    font-size: 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+
+}
+
+.beneficios {
+    font-size: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+
+.lista_de_beneficios {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 0px;
+}
+
+.main_three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.card {
+    width: 278px;
+    height: 518px;
+    background: #1319b8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 1px rgb(156, 156, 156);
+
+}
+
+.card2 {
+    width: 278px;
+    height: 351px;
+    background: white;
+    border-radius: 20px;
+    z-index: 2;
+    display: flex;
+}
+
+.circle {
+    position:absolute;
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    margin-bottom: 270px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plano {
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.price {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
